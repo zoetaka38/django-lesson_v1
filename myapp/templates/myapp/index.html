@@ -1,1 +1,6 @@
 hello, world!
+<p>
+{% for post in posts %}
+    {{ post.message }}, {{ post.complete_flag }}, {{ post.created_date }}
+    <p></p>
+{% endfor %}
